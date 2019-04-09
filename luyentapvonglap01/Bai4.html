@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var a=0;
+    var b=1;
+    for( let i=0;i<10;i++)
+    {
+        let x;
+        x=b;
+        b=a+b;
+        a=x;
+       if(b % 5==0)
+        {
+            document.write("So dau tien trong fibonacci chi het cho 5 la: "+b);
+            break;
+        }
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x=1;
+    var x1="Day so la: ";
+    for(var a=2;a<=101;a++)
+    {
+        if(x%3==0 && x%5!==0){
+            x+="fizz";
+        }else if(x%5==0 && x%3!==0){
+            x+="buzz";
+        }else if (x%3==0 && x%5==0){
+            x+="fizzbuzz";
+        }
+        x1+= " "+x;
+        x=a;
+
+    }
+alert(x1);
+</script>
+</body>
+</html>

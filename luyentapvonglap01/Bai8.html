@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Ready" onclick="ready();">
+<script>
+    function ready(){
+        let a=parseInt(prompt("Nhap diem bat dau "));
+        let b=parseInt(prompt("Nhap diem ket thuc "));
+        let d=Math.floor(Math.random()*(b-a))+a ;
+        var c=parseInt(prompt("Nhap so ngau nhien tu "+a+" den "+b));
+        // alert(d);
+        if(c == d){
+          alert("So ban chon la "+c+"bang voi so ngau nhien "+d);
+        }
+       else
+        {
+            while (c!==d)
+            {
+               alert("So ban chon la "+c+"Khong giong voi so ngau nhien "+d);
+                let c=prompt("Moi ban chon lan 2 :");
+                if (c==random){
+                    document.write("So ban chon la "+c+"bang voi so ngau nhien "+d);
+                    break;
+                } else if (c!==random)
+                {
+                    document.write("So ban chon la "+c+"Khong giong voi so ngau nhien "+d);
+                    document.write("Ban da het luot");
+                    break;
+                }
+            }
+        }
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input =parseInt(prompt("nhap so luong so fibonacci"));
+    var a=0;
+    var b=1;
+    var chuoi = input + " So fibonacci dau tien la "+ a+" "+b;
+    for(var i=2;i<=input;i++){
+        let x;
+        x=b;
+        b=a+b;
+        a=x;
+        chuoi=chuoi+" "+b;
+    }
+    alert(chuoi);
+</script>
+</body>
+</html>
